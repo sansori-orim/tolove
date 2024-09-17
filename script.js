@@ -7,7 +7,7 @@ const noBtnRect = noBtn.getBoundingClientRect();
 yesBtn.addEventListener('click',() => {
     question.innerHTML = 'ဟုတ်ကဲ့..နောက်တစ်ခါမဆိုးတော့ပါဘူးနော်..';
 });
-noBtn.addEventListener('click',() => {
+noBtn.addEventListener('mouseover',() => {
     const i = Math.floor(Math.random() * (wapperRect.width - noBtnRect.width)) +1;
     const j = Math.floor(Math.random() * (wapperRect.height - noBtnRect.height)) +1;
     noBtn.style.left = i + 'px';
